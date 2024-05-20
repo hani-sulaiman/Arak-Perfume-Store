@@ -183,7 +183,7 @@ header .quick-links .container .all-category .links.show {
 }
 
 .hero .bg {
-    background: url(/assets/img/wallpaper.jpg);
+    background: url(../img/wallpaper.jpg);
     background-size: cover;
     filter: blur(2px);
     width: 100%;
@@ -362,7 +362,7 @@ header .quick-links .container .all-category .links.show {
         padding: 100px 30px;
     }
     .hero .bg{
-        background-image: url(/assets/img/wallpaper-mob.jpg);
+        background-image: url(../img/wallpaper-mob.jpg);
         animation: zoomOut-mobile 2s forwards;
     }
     @keyframes zoomOut-mobile {
