@@ -87,22 +87,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 2vh;
+        font-size: 1.7vh;
         color: #000000;
     }
 
     .navigation-bottom .container a i {
-        font-size: 2.7vh;
+        font-size: 2.4vh;
         -webkit-text-stroke: 1px;
     }
 
     .navigation-bottom .container a i.bi-bag {
-        font-size: 3vh;
+        font-size: 2.7vh;
         -webkit-text-stroke: 0.5px;
     }
 
     .navigation-bottom .container a i.bi-person {
-        font-size: 3vh;
+        font-size: 2.7vh;
     }
 
     .navigation-bottom .container a.active {
@@ -118,10 +118,10 @@
         font-weight: 500;
         border-radius: 50%;
         position: absolute;
-        font-size: 14px;
+        font-size: 13px;
         top: 0.9vh;
         width: 4vh;
         text-align: center;
-        left: -0.5vh;
+        left: -0.7vh;
     }
 }
