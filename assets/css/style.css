@@ -552,7 +552,7 @@ header .quick-links .container .all-category .links.show {
 
 .banners .row .new-arrived .bg {
     background-size: cover;
-    filter: blur(2px);
+    filter: blur(4px);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -728,7 +728,9 @@ footer .row:nth-child(2) .container a {
 footer .row:nth-child(2) .container a:hover {
     color: var(--secondary-color);
 }
-
+footer .row .container .column p {
+    text-align: center;
+}
 header .nav .nav-container .icons .cart {
     position: relative;
 }
