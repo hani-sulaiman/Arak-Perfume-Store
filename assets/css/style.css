@@ -771,7 +771,7 @@ header .nav .nav-container .icons .cart .floating-cart .container {
 header .nav .nav-container .icons .cart .floating-cart .container .close-cart{
     position: absolute;
     top: -40px;
-    right: -20px;
+    right: -40px;
     background: none;
     border: none;
     outline: none;
