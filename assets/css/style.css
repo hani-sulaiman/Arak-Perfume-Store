@@ -855,3 +855,107 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     font-size: 18px;
     font-weight: 700;
 }
+
+.floating-cart-mob{
+    display: none;
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+.floating-cart-mob .container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    height: 100%;
+}
+.floating-cart-mob .container .head{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #6666665e;
+    margin-bottom: 15px;
+    flex: 20%;
+    align-items: center;
+}
+.floating-cart-mob .container .head button{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+.floating-cart-mob .container .items .item .content{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+}
+.floating-cart-mob .container .items .item .content .row{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 20px 0px 0px;
+}
+.floating-cart-mob .container .items .item .content .row button{
+    background:none;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+.floating-cart-mob .container .items{
+    overflow: auto;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.floating-cart-mob .container .items::-webkit-scrollbar{
+    display: none;
+}
+.floating-cart-mob .container .items .item{
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.floating-cart-mob .container .items .item .image{
+    background-color: var(--light-secondary);
+    border-radius: 7px;
+    position: relative;
+}
+.floating-cart-mob .container .items .item .image .quantity{
+    position: absolute;
+    padding: 5px 8px;
+    border-radius: 5px;
+    bottom: -3px;
+    right: -3px;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.floating-cart-mob .container .items .item .image img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+
+
+}
+.floating-cart-mob .container .action{
+    border-top: 1px solid #6666665e;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.floating-cart-mob .container .action a{
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 24px;
+    text-align: center;
+    text-decoration: none;
+}

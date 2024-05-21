@@ -10,11 +10,11 @@
 
     header .nav .nav-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     header .nav .nav-container .search form {
-        width: 100%;
+        width: 90%;
     }
 
     header .nav .nav-container .icons {
@@ -46,7 +46,7 @@
     }
 
     header .nav .nav-container .logo span {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
     }
 
