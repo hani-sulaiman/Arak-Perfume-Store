@@ -300,12 +300,14 @@ header .quick-links .container .all-category .links.show {
     transition: 0.2s;
     opacity: 0;
     transform: translateY(50px);
+    border: 2px solid transparent;
     animation: hero-text 0.5s ease-in-out 0.9s forwards;
 }
 
 .hero .slider .text-side a:hover {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
+    background: none;
     transition: 0.2s;
 
 }
