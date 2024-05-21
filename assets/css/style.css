@@ -530,25 +530,18 @@ header .quick-links .container .all-category .links.show {
 }
 
 .banners .row>div a {
-    color: #000;
+    background-color: var(--secondary-color);
+    color: #fff;
     position: relative;
+    padding: 5px 10px;
+    border-radius: 15px;
     text-decoration: none;
     transition: 0.2s;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .banners .row>div a:hover {
-    color: var(--secondary-color);
-}
-
-.banners .row>div a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -3px;
-    height: 1.5px;
-    background: currentColor;
+    box-shadow: 1px 1px 3px #00000092;
 }
 
 .banners .row .new-arrived {
@@ -577,7 +570,7 @@ header .quick-links .container .all-category .links.show {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     position: relative;
     z-index: 3;
