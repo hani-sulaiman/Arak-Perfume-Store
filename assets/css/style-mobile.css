@@ -214,9 +214,13 @@
     footer .row:nth-child(1) .container {
         gap: 30px;
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     footer .row:nth-child(2) .container {
         justify-content: space-evenly !important;
+    }
+    footer .row form input ,footer .row form button{
+        width: 100% !important;
     }
 }
