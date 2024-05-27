@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
+
 }
 
 body {
@@ -30,16 +31,31 @@ header {
     animation-name: header-effect;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
-
+header.scroll-active {
+    position: fixed;
+    top: 0px;
+    background: var(--light-secondary);
+}
 
 header .nav {
     padding: 10px 206px;
 
 }
+header.scroll-active .nav{
+    transition: 0.5s;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+header.scroll-active .quick-links{
+    background-color: var(--primary-color);
 
+}
+header.scroll-active .quick-links .container a{
+    color: #fff;
+}
 header .nav .nav-container {
     display: flex;
     justify-content: space-between;
@@ -124,13 +140,15 @@ header .nav .nav-container .icons .cart .items-count-cart {
     left: -0.7vh;
 }
 
-header .nav .nav-container .icons .account{
+header .nav .nav-container .icons .account {
     position: relative;
 }
-header .nav .nav-container .icons .account:hover .sign-form{
- display: block;
+
+header .nav .nav-container .icons .account:hover .sign-form {
+    display: block;
 }
-header .nav .nav-container .icons .account .sign-form{
+
+header .nav .nav-container .icons .account .sign-form {
     display: none;
     position: absolute;
     top: 35px;
@@ -142,15 +160,17 @@ header .nav .nav-container .icons .account .sign-form{
     background-color: #fff;
     animation: floating-form 1s forwards;
 }
-header .nav .nav-container .icons .account .sign-form .form form input{
-   height: 30px;
-   width: 100%;
-   border-radius: 15px;
-   border: 1px solid var(--light-color);
-   text-indent: 5px;
-   margin-bottom: 10px;
+
+header .nav .nav-container .icons .account .sign-form .form form input {
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--light-color);
+    text-indent: 5px;
+    margin-bottom: 10px;
 }
-header .nav .nav-container .icons .account .sign-form .form form button{
+
+header .nav .nav-container .icons .account .sign-form .form form button {
     width: 100%;
     padding: 7px 0px;
     border-radius: 15px;
@@ -159,7 +179,8 @@ header .nav .nav-container .icons .account .sign-form .form form button{
     color: #fff;
     cursor: pointer;
 }
-header .nav .nav-container .icons .account .sign-form .close-form-sign{
+
+header .nav .nav-container .icons .account .sign-form .close-form-sign {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -167,29 +188,35 @@ header .nav .nav-container .icons .account .sign-form .close-form-sign{
     border: none;
     cursor: pointer;
 }
-header .nav .nav-container .icons .account .sign-form .toggls{
+
+header .nav .nav-container .icons .account .sign-form .toggls {
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 25px;
 }
-header .nav .nav-container .icons .account .sign-form .toggls button{
+
+header .nav .nav-container .icons .account .sign-form .toggls button {
     border-radius: 15px;
     padding: 6px 15px;
     border: none;
     cursor: pointer;
 }
-header .nav .nav-container .icons .account .sign-form .toggls button.active{
+
+header .nav .nav-container .icons .account .sign-form .toggls button.active {
     background-color: var(--primary-color);
     color: #fff;
 
 }
-header .nav .nav-container .icons .account .sign-form .form{
+
+header .nav .nav-container .icons .account .sign-form .form {
     display: none;
 }
-header .nav .nav-container .icons .account .sign-form .form.active{
+
+header .nav .nav-container .icons .account .sign-form .form.active {
     display: block;
 }
+
 header .nav .nav-container .icons .account form.popup-form {
     display: block;
 }
@@ -393,9 +420,10 @@ header .quick-links .container .all-category .links.show {
     cursor: pointer;
 }
 
-.products{
+.products {
     gap: 20px;
 }
+
 .best-deals .products .product,
 .high-lighted-products .products .product {
     width: 250px;
@@ -734,15 +762,19 @@ footer .row:nth-child(2) .container a {
 footer .row:nth-child(2) .container a:hover {
     color: var(--secondary-color);
 }
+
 footer .row .container .column p {
     text-align: center;
 }
+
 header .nav .nav-container .icons .cart {
     position: relative;
 }
-header .nav .nav-container .icons .cart:hover .floating-cart{
-   display: block;
+
+header .nav .nav-container .icons .cart:hover .floating-cart {
+    display: block;
 }
+
 header .nav .nav-container .icons .cart .floating-cart {
     display: none;
     position: absolute;
@@ -761,7 +793,8 @@ header .nav .nav-container .icons .cart .floating-cart .container {
     flex-direction: column;
     position: relative;
 }
-header .nav .nav-container .icons .cart .floating-cart .container .close-cart{
+
+header .nav .nav-container .icons .cart .floating-cart .container .close-cart {
     position: absolute;
     top: -40px;
     right: -40px;
@@ -770,6 +803,7 @@ header .nav .nav-container .icons .cart .floating-cart .container .close-cart{
     outline: none;
     cursor: pointer;
 }
+
 header .nav .nav-container .icons .cart .floating-cart .container .items {
     display: flex;
     flex-direction: column;
@@ -791,15 +825,18 @@ header .nav .nav-container .icons .cart .floating-cart .container .items .item .
     align-items: center;
     border-radius: 10px;
 }
-header .nav .nav-container .icons .cart .floating-cart .container .items .item .content{
+
+header .nav .nav-container .icons .cart .floating-cart .container .items .item .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
-header .nav .nav-container .icons .cart .floating-cart .container .items .item .content p{
+
+header .nav .nav-container .icons .cart .floating-cart .container .items .item .content p {
     margin: 5px 0px;
 }
+
 header .nav .nav-container .icons .cart .floating-cart .container .items .item .content button {
     border: none;
     background: none;
@@ -824,10 +861,12 @@ header .nav .nav-container .icons .cart .floating-cart .container .items .item .
     height: 80px;
     padding: 5px 10px;
 }
-header .nav .nav-container .icons .cart .floating-cart .container .action{
+
+header .nav .nav-container .icons .cart .floating-cart .container .action {
     margin-top: 30px;
 }
-header .nav .nav-container .icons .cart .floating-cart .container .action .checkout-button{
+
+header .nav .nav-container .icons .cart .floating-cart .container .action .checkout-button {
     width: 100%;
     display: block;
     text-align: center;
@@ -839,17 +878,19 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .check
     transition: 0.3s;
     border: 2px solid transparent
 }
-header .nav .nav-container .icons .cart .floating-cart .container .action .checkout-button:hover{
+
+header .nav .nav-container .icons .cart .floating-cart .container .action .checkout-button:hover {
     background-color: transparent;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
 }
-header .nav .nav-container .icons .cart .floating-cart .container .action .total{
+
+header .nav .nav-container .icons .cart .floating-cart .container .action .total {
     font-size: 18px;
     font-weight: 700;
 }
 
-.floating-cart-mob{
+.floating-cart-mob {
     display: none;
     height: 50vh;
     width: 100%;
@@ -861,13 +902,15 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     left: 0;
     z-index: 9;
 }
-.floating-cart-mob .container{
+
+.floating-cart-mob .container {
     display: flex;
     flex-direction: column;
     padding: 15px 30px;
     height: 100%;
 }
-.floating-cart-mob .container .head{
+
+.floating-cart-mob .container .head {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #6666665e;
@@ -875,52 +918,60 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     flex: 20%;
     align-items: center;
 }
-.floating-cart-mob .container .head button{
+
+.floating-cart-mob .container .head button {
     background: none;
     border: none;
     outline: none;
     font-size: 25px;
 }
-.floating-cart-mob .container .items .item .content{
+
+.floating-cart-mob .container .items .item .content {
     margin-left: 25px;
     display: flex;
     flex-direction: column;
     flex: 70%;
 }
-.floating-cart-mob .container .items .item .content .row{
+
+.floating-cart-mob .container .items .item .content .row {
     display: flex;
     justify-content: space-between;
-    padding:0px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
 }
-.floating-cart-mob .container .items .item .content .row button{
-    background:none;
+
+.floating-cart-mob .container .items .item .content .row button {
+    background: none;
     color: var(--primary-color);
     font-size: 17px;
     font-weight: 500;
     border: none;
     outline: none;
 }
-.floating-cart-mob .container .items{
+
+.floating-cart-mob .container .items {
     overflow: auto;
     height: 27vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.floating-cart-mob .container .items::-webkit-scrollbar{
+
+.floating-cart-mob .container .items::-webkit-scrollbar {
     display: none;
 }
-.floating-cart-mob .container .items .item{
+
+.floating-cart-mob .container .items .item {
     display: flex;
     padding-bottom: 5px;
 }
 
-.floating-cart-mob .container .items .item .image{
+.floating-cart-mob .container .items .item .image {
     background-color: var(--light-secondary);
     border-radius: 7px;
     position: relative;
 }
-.floating-cart-mob .container .items .item .image .quantity{
+
+.floating-cart-mob .container .items .item .image .quantity {
     position: absolute;
     padding: 5px 8px;
     border-radius: 5px;
@@ -930,19 +981,22 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     background-color: var(--primary-color);
     color: #fff;
 }
-.floating-cart-mob .container .items .item .image img{
+
+.floating-cart-mob .container .items .item .image img {
     height: 100px;
     width: 100px;
     object-fit: contain;
 
 
 }
-.floating-cart-mob .container .action{
+
+.floating-cart-mob .container .action {
     border-top: 1px solid #6666665e;
     margin-top: 15px;
     padding-top: 15px;
 }
-.floating-cart-mob .container .action a{
+
+.floating-cart-mob .container .action a {
     display: block;
     width: 100%;
     padding: 15px 0px;
@@ -951,4 +1005,46 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     border-radius: 24px;
     text-align: center;
     text-decoration: none;
+}
+
+.section {
+    min-height: 70vh;
+}
+.section.categories{
+    margin-top:170px;
+}
+.section.categories .route p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.section.categories .route p span{
+    color: var(--light-primary);
+    
+}
+
+.section.categories .categories-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.section.categories .categories-cards .category{
+    width: 350px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--light-primary);
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 0px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.section.categories .categories-cards .category:hover{
+    box-shadow:2px 2px 4px #581f188a;
+}
+.section.categories .categories-cards .category .image img{
+    height: 150px;
+    transform: rotate(-30deg);
 }
