@@ -10,7 +10,7 @@
     --background-color: #fff;
     --dark-color: #000000;
     --light-color: #00000032;
-    --light-grey: #e8e8e8;
+    --light-grey: #f4f4f4;
 }
 
 * {
@@ -167,6 +167,7 @@ header .nav .nav-container .icons .account .sign-form {
     border-radius: 15px;
     background-color: #fff;
     animation: floating-form 1s forwards;
+    box-shadow: 1px 1px 6px var(--light-color);
 }
 
 header .nav .nav-container .icons .account .sign-form .form form input {
@@ -793,6 +794,7 @@ header .nav .nav-container .icons .cart .floating-cart {
     padding: 50px;
     border-radius: 15px;
     animation: floating-form 1s forwards;
+    box-shadow: 1px 1px 6px var(--light-color);
 }
 
 header .nav .nav-container .icons .cart .floating-cart .container {
@@ -869,9 +871,9 @@ header .nav .nav-container .icons .cart .floating-cart .container .items .item .
     padding: 5px 10px;
 }
 
-header .nav .nav-container .icons .cart .floating-cart .container .action {
+/* header .nav .nav-container .icons .cart .floating-cart .container .action {
     margin-top: 30px;
-}
+} */
 
 header .nav .nav-container .icons .cart .floating-cart .container .action .checkout-button {
     width: 100%;
@@ -1443,42 +1445,50 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     padding: 30px;
 }
 
-.section.product-details .product-content .deep-details .box .content > div {
+.section.product-details .product-content .deep-details .box .content>div {
     display: none;
 }
 
-.section.product-details .product-content .deep-details .box .content > div.active {
+.section.product-details .product-content .deep-details .box .content>div.active {
     display: block;
 }
-.section.product-details .product-content .deep-details .box .content .reviews.active{
+
+.section.product-details .product-content .deep-details .box .content .reviews.active {
     display: flex;
     gap: 60px;
 }
-.section.product-details .product-content .deep-details .box .content .reviews .average{
+
+.section.product-details .product-content .deep-details .box .content .reviews .average {
     display: flex;
     margin-left: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
-.section.product-details .product-content .deep-details .box .content .reviews .average h3{
-   margin: 7px;
+
+.section.product-details .product-content .deep-details .box .content .reviews .average h3 {
+    margin: 7px;
 }
-.section.product-details .product-content .deep-details .box .content .reviews .average p{
-   margin: 7px;
+
+.section.product-details .product-content .deep-details .box .content .reviews .average p {
+    margin: 7px;
 }
-.section.product-details .product-content .deep-details .box .content .reviews .average p.average-rate{
-   margin: 7px;
-   color: var(--primary-color);
-   font-weight: 700;
-}
-.section.product-details .product-content .deep-details .box .content .reviews .average i{
-    color: var(--primary-color);
-}
-.section.product-details .product-content .deep-details .box .content .reviews .average .count .count-number{
+
+.section.product-details .product-content .deep-details .box .content .reviews .average p.average-rate {
+    margin: 7px;
     color: var(--primary-color);
     font-weight: 700;
 }
+
+.section.product-details .product-content .deep-details .box .content .reviews .average i {
+    color: var(--primary-color);
+}
+
+.section.product-details .product-content .deep-details .box .content .reviews .average .count .count-number {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
 .section.product-details .product-content .deep-details .box .content .users-reviews {
     max-height: 400px;
     overflow: auto;
@@ -1487,22 +1497,202 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     gap: 20px;
     width: 75%;
 }
-.section.product-details .product-content .deep-details .box .content .users-reviews .review p{
+
+.section.product-details .product-content .deep-details .box .content .users-reviews .review p {
     margin: 5px;
 }
-.section.product-details .product-content .deep-details .box .content .users-reviews .review .rate{
+
+.section.product-details .product-content .deep-details .box .content .users-reviews .review .rate {
     display: flex;
     margin: 5px;
-    gap:10px;
+    gap: 10px;
     color: var(--primary-color);
 }
-.section.product-details .product-content .deep-details .box .content .users-reviews .review .details{
+
+.section.product-details .product-content .deep-details .box .content .users-reviews .review .details {
     font-weight: 300;
 }
-.section.product-details .product-content .deep-details .box .content .users-reviews .review .username{
+
+.section.product-details .product-content .deep-details .box .content .users-reviews .review .username {
     font-style: italic;
     color: var(--primary-color);
 }
+
 .section.product-details .section.products-container {
     margin-top: 0px !important;
+}
+
+.section.profile {
+    margin-top: 170px;
+    width: 100%;
+}
+
+.section.profile>.container {
+    display: flex;
+    gap: 100px;
+    margin-top: 30px;
+
+}
+
+.section.profile>.container .sidebar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--light-grey);
+}
+
+.section.profile>.container .sidebar h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #666;
+    font-size: 16px;
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 20px;
+}
+
+.section.profile>.container .sidebar h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section.profile>.container .sidebar .links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section.profile>.container .sidebar .links a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 70px 10px 10px;
+    display: flex;
+    gap: 10px;
+}
+.section.profile>.container .sidebar .links a:hover{
+    background-color: var(--primary-color);
+    color: #fff;   
+}
+.section.profile>.container .sidebar .links a.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.section.profile>.container .profile-details {
+    display: none;
+    width: 50%;
+}
+
+.section.profile>.container .profile-details.active {
+    display: block;
+}
+
+.section.profile>.container .profile-details>.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.profile>.container .profile-details>.container .statistics {
+    display: flex;
+    gap: 20px;
+}
+
+.section.profile>.container .profile-details>.container .statistics .count-cart,
+.section.profile>.container .profile-details>.container .statistics .count-orders {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px 10px 30px;
+    background-color: var(--light-grey);
+    border-radius: 7px;
+}
+
+.section.profile>.container .profile-details>.container .statistics .count-cart h2,
+.section.profile>.container .profile-details>.container .statistics .count-orders h2 {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.section.profile>.container .profile-details>.container .info {
+    margin-top: 20px;
+}
+
+.section.profile>.container .profile-details  .my-location {
+    background-color: var(--light-grey);
+    padding: 10px 100px 10px 30px;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+.section.profile>.container .profile-details>.container .info .my-location p {
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+}
+
+.section.profile>.container .profile-details .orders {
+    border: 2px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section.profile>.container .profile-details .orders table {
+    width: 100%;
+}
+
+.section.profile>.container .profile-details .orders table thead {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.section.profile>.container .profile-details .orders table thead td,
+.section.profile>.container .profile-details .orders table tr td {
+    padding: 10px 20px;
+}
+
+.section.profile>.container .profile-details .orders table tr td a {
+    color: var(--secondary-color);
+}
+.section.profile>.container .profile-details form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section.profile>.container .profile-details form .form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.section.profile>.container .profile-details form .form-input input{
+    height: 35px;
+    text-indent: 20px;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+}
+.section.profile>.container .profile-details form button{
+    padding: 10px 0px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+.section.profile>.container .profile-details form button:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+
+}
+.section.profile>.container .profile-details button.add-location{
+    background: none;
+    border: 1px dashed var(--primary-color);
+    padding: 100px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
 }
