@@ -1,7 +1,7 @@
 @media only screen and (max-width:750px) {
 
     header .nav {
-        padding: 5px;
+        padding: 5px !important;
     }
 
     header .quick-links {
@@ -131,7 +131,7 @@
         border-radius: 50%;
         position: absolute;
         font-size: 12px;
-        top: 0.9vh;
+        top: 1.2vh;
         width: 4vh;
         text-align: center;
         left: -0.7vh;
@@ -158,7 +158,18 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-
+    .products{
+        gap: 14px 0px;
+    }
+    .products .product {
+        width: 160px;
+    }
+    .products .product .head, .products .product .head {
+        height: 170px;
+    }
+    .products .product .content, .products .product .content {
+        padding: 10px;
+    }
     .high-lighted-products .buttons .container {
         justify-content: center !important;
         flex-wrap: wrap;
@@ -222,5 +233,90 @@
     }
     footer .row form input ,footer .row form button{
         width: 100% !important;
+    }
+    .section.product-details .route {
+        margin-left: 0px;
+    }
+    .section.product-details .product-content>.head{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+    .section.product-details .product-content .view .title-background{
+        font-size: 45px;
+
+    }
+    .section.product-details .product-content .view .viewer {
+        position: relative;
+        margin-left: 0;
+        padding: 40px 50px;
+    }
+    .section.product-details .product-content .view .viewer img {
+        height: 210px;
+        left: 21%;
+    }
+    .section.product-details .product-content .view .other-images {
+        width: 100%;
+    }
+    .section.product-details .product-content .view .other-images{
+        left: 0;
+    }
+    .section.product-details .product-content .view .other-images .images img {
+        height: 75px;
+        min-width: 50px;
+    }
+    header .nav .nav-container .search form {
+        height: 5vh;
+    }
+    .section.product-details .product-content .head .details .container .title {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .section.product-details .product-content .details .shipping {
+        padding: 16px 6px;
+    }
+    .section.product-details .product-content .deep-details {
+        margin: 50px 0px 0px 0px;
+    }
+    .section.product-details {
+        margin-top: 120px;
+    }
+    .trust-buy {
+        margin: 25px 0px;
+    }
+    .section.product-details .product-content .details .sizes {
+        gap: 7px;
+    }
+    .section.product-details .product-content .add-to-cart, .section.product-details .product-content .buy-now {
+        padding: 15px 10px;
+    }
+    .trust-buy .signal p {
+        font-size: 13px;
+    }
+    .trust-buy .signal {
+        gap: 3px;
+    }
+    .trust-buy .signal i {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .products .product {
+        width: 130px;
+    }
+    .products .product .head, .products .product .head {
+        height: 150px;
+    }
+    .products .product .content h3, .products .product .content h3 {
+        font-size: 16px;
+    }
+    .products .product .content, .products .product .content {
+        padding: 8px;
+    }
+    .section.product-details .product-content .details .sizes {
+        gap: 3px;
+    }
+    .trust-buy .signal p {
+        font-size: 11px;
     }
 }
