@@ -299,6 +299,32 @@
     .trust-buy .signal i {
         font-size: 18px;
     }
+    .section.profile>.container .sidebar{
+        display: none;
+    }
+    .section.profile>.container .profile-details{
+        width: 100%;
+    }
+    .section.profile>.container .profile-details>.container .statistics{
+        flex-wrap: wrap;
+
+    }
+    .section.profile>.container .profile-details>.container .statistics >div{
+        width: 100%;
+
+    }
+    .section.profile>.container .profile-details .my-location {
+        padding: 10px;
+    }
+    .section.profile>.container .profile-details .orders table thead td, .section.profile>.container .profile-details .orders table tr td{
+        padding: 10px;
+    }
+    .section.profile {
+        margin-top: 90px;
+    }
+    .section.profile>.container .profile-details button.add-location {
+        padding: 80px;
+    }
 }
 @media only screen and (max-width:400px) {
     .products .product {
@@ -319,4 +345,5 @@
     .trust-buy .signal p {
         font-size: 11px;
     }
+
 }

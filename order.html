@@ -214,182 +214,89 @@
                 </div>
             </div>
             <div class="profile-details active">
-                <h2>Personal Profile</h2>
-                <div class="container">
-                    <div class="statistics">
-                        <div class="count-cart">
-                            <h2>3</h2>
-                            <h3>Products in cart</h3>
-                        </div>
-                        <div class="count-orders">
-                            <h2>1</h2>
-                            <h3>Placed orders</h3>
+                <h2>Order <span>123</span></h2>
+                <div class="actions">
+                    <button class="cancel-order">
+                        <i class="bi bi-x-circle"></i>
+                        <span>Cancel order</span>
+                    </button>
+                    <button class="payment-order">
+                        <i class="bi bi-credit-card"></i>
+                        <span>Complete payment</span>
+                    </button>
+                </div>
+                <div class="order">
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary">
+
+                            <div class="row">
+                                <div class="key">Order Number:</div>
+                                <div class="value">123</div>
+                            </div>
+                            <div class="row">
+                                <div class="key">Full Name:</div>
+                                <div class="value">John Wick</div>
+                            </div>
+                            <div class="row">
+                                <div class="key">Email:</div>
+                                <div class="value">johnwww123@gmail.com</div>
+                            </div>
+                            <div class="row">
+                                <div class="key">Address:</div>
+                                <div class="value">
+                                    P.O. Box 9966
+                                    Al Qouz
+                                    Dubai
+                                    UAE
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="key">Total Amount:</div>
+                                <div class="value">$500</div>
+                            </div>
+                            <div class="row">
+                                <div class="key">Payment Method:</div>
+                                <div class="value">Paypal</div>
+                            </div>
+                            <div class="row">
+                                <div class="key">Order Status:</div>
+                                <div class="value">Paid</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="my-location">
-                            <h3>Your Delivery Location</h3>
-                            <table>
-                                <tr>
-                                    <td>Country</td>
-                                    <td>
-                                        <p class="country">United Arab Emirates</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>State</td>
-                                    <td>
-                                        <p class="state">Abu Dhabi</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Address</td>
-                                    <td>
-                                        <p class="address">Al Dana Building, Khalidiya, PO box 6309, Abu Dhabi, UAE</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Postcode</td>
-                                    <td>
-                                        <p class="postcode">2703</p>
-                                    </td>
-                                </tr>
-                            </table>
+                    <div class="order-details">
+                        <h3>Order Details</h3>
+                        <div class="details">
+                            <div class="orders">
+                                <table>
+                                    <thead>
+                                        <td>#</td>
+                                        <td>Image</td>
+                                        <td>Price</td>
+                                        <td>Quantity</td>
+                                        <td>Total</td>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><img src="assets/img/perfume.png" alt=""></td>
+                                        <td>$100</td>
+                                        <td>1</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><img src="assets/img/perfume2.png" alt=""></td>
+                                        <td>$200</td>
+                                        <td>2</td>
+                                        <td>$400</td>
+                                    </tr>
+
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-details ">
-                <h2>My Orders</h2>
-                <div class="orders">
-                    <table>
-                        <thead>
-                            <td>ID</td>
-                            <td>Count</td>
-                            <td>Price</td>
-                            <td>Actions</td>
-                        </thead>
-                        <tr>
-                            <td>212</td>
-                            <td>3</td>
-                            <td>$100</td>
-                            <td><a href="">Show order</a></td>
-                        </tr>
-                        <tr>
-                            <td>212</td>
-                            <td>3</td>
-                            <td>$100</td>
-                            <td><a href="">Show order</a></td>
-                        </tr>
-                        <tr>
-                            <td>212</td>
-                            <td>3</td>
-                            <td>$100</td>
-                            <td><a href="">Show order</a></td>
-                        </tr>
-                        <tr>
-                            <td>212</td>
-                            <td>3</td>
-                            <td>$100</td>
-                            <td><a href="">Show order</a></td>
-                        </tr>
-                        <tr>
-                            <td>212</td>
-                            <td>3</td>
-                            <td>$100</td>
-                            <td><a href="">Show order</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="profile-details ">
-                <h2>Manage My Profile</h2>
-                <form action="">
-                    <div class="form-input">
-                        <label for="fullname">Fullname : </label>
-                        <input type="text" id="fullname">
-                    </div>
-                    <div class="form-input">
-                        <label for="email">Email : </label>
-                        <input type="text" id="email">
-                    </div>
-                    <div class="form-input">
-                        <label for="password">Password : </label>
-                        <input type="password" id="password">
-                    </div>
-                    <div class="form-input">
-                        <label for="re-password">Confirm Password : </label>
-                        <input type="password" id="re-password">
-                    </div>
-                    <button type="submit">Update</button>
-                </form>
-            </div>
-            <div class="profile-details ">
-                <h2>My Locations</h2>
-                <div class="all-locations">
-                    <div class="my-location">
-                        <h3>Your Delivery Location 1</h3>
-                        <table>
-                            <tr>
-                                <td>Country</td>
-                                <td>
-                                    <p class="country">United Arab Emirates</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>State</td>
-                                <td>
-                                    <p class="state">Abu Dhabi</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Address</td>
-                                <td>
-                                    <p class="address">Al Dana Building, Khalidiya, PO box 6309, Abu Dhabi, UAE</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Postcode</td>
-                                <td>
-                                    <p class="postcode">2703</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="my-location">
-                        <h3>Your Delivery Location 1</h3>
-                        <table>
-                            <tr>
-                                <td>Country</td>
-                                <td>
-                                    <p class="country">United Arab Emirates</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>State</td>
-                                <td>
-                                    <p class="state">Abu Dhabi</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Address</td>
-                                <td>
-                                    <p class="address">Al Dana Building, Khalidiya, PO box 6309, Abu Dhabi, UAE</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Postcode</td>
-                                <td>
-                                    <p class="postcode">2703</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <button class="add-location">
-                    <i class="bi bi-plus"></i>
-                    <span>Add Address</span>
-                </button>
             </div>
         </div>
     </div>
