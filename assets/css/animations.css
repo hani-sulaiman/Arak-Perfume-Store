@@ -147,3 +147,20 @@
 
     }
 }
+@keyframes title-product-background {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+@keyframes product-up {
+    0%{
+        transform:  translateY(50px);
+    }
+    100%{
+        transform:  translateY(0px);
+    }
+}
