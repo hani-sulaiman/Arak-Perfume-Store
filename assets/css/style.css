@@ -86,7 +86,7 @@ header .nav .nav-container .logo img {
 
 header .nav .nav-container .search form {
     width: 50vh;
-    height: 5.8vh;
+    height: 5vh;
     /* border: 1px solid var(--light-primary); */
     border-radius: 35px;
     position: relative;
@@ -255,16 +255,16 @@ header .quick-links .container {
 header .quick-links .container a {
     padding: 10px 0px;
     width: 70px;
-    border-top: 2px solid #000;
+    /* border-top: 2px solid #000; */
     text-align: center;
     transition: 0.3s;
 }
 
-header .quick-links .container a:hover {
+/* header .quick-links .container a:hover {
     background-color: #fff;
     color: var(--primary-color);
 
-}
+} */
 
 header .quick-links .container a,
 header .quick-links .container span {
@@ -447,7 +447,7 @@ header .quick-links .container .all-category .links.show {
 
 
 .products .product {
-    width: 250px;
+    width: 200px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -467,7 +467,7 @@ header .quick-links .container .all-category .links.show {
 
 .products .product .head,
 .products .product .head {
-    height: 250px;
+    height: 180px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -489,12 +489,13 @@ header .quick-links .container .all-category .links.show {
 
 .products .product .head img,
 .products .product .head img {
-    height: 100%;
+    height: 90%;
+
 }
 
 .products .product .content,
 .products .product .content {
-    padding: 30px 30px;
+    padding: 10px;
 }
 
 .products .product .content .counter-date {
@@ -522,7 +523,8 @@ header .quick-links .container .all-category .links.show {
 .products .product .content h3,
 .products .product .content h3 {
     color: var(--primary-color);
-    margin: 10px 0px;
+    margin:0;
+    margin-bottom: 10px;
 }
 
 .products .product .content .rate i,
