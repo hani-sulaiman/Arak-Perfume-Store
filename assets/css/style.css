@@ -3,6 +3,7 @@
 
 :root {
     --primary-color: #581f18;
+    --soft-primary: rgba(88, 31, 24, 0.15);
     --light-primary: #a36057c9;
     --secondary-color: #ab8e66;
     --light-secondary: #fde6c5;
@@ -56,7 +57,7 @@ header.scroll-active .nav {
 }
 
 header.scroll-active .quick-links {
-    background-color: var(--primary-color);
+    background-color: #000;
 
 }
 
@@ -242,7 +243,6 @@ header .quick-links {
     display: flex;
     align-items: center;
     padding-left: 220px;
-    height: 45px;
     background-color: transparent;
 }
 
@@ -250,6 +250,20 @@ header .quick-links .container {
     width: 70%;
     display: flex;
     justify-content: space-between;
+}
+
+header .quick-links .container a {
+    padding: 10px 0px;
+    width: 70px;
+    border-top: 2px solid #000;
+    text-align: center;
+    transition: 0.3s;
+}
+
+header .quick-links .container a:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+
 }
 
 header .quick-links .container a,
@@ -260,7 +274,6 @@ header .quick-links .container span {
     font-weight: 500;
     transition: 0.3s;
     border-bottom: 2px solid transparent;
-    padding-bottom: 1px;
 }
 
 header .quick-links .container a:hover {
@@ -1635,6 +1648,8 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     display: flex;
     flex-direction: column;
     width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .section.profile>.container .profile-details .orders table {
@@ -1644,11 +1659,13 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
 .section.profile>.container .profile-details .orders table thead {
     background-color: var(--primary-color);
     color: #fff;
+    border-radius: 3px;
 }
 
 .section.profile>.container .profile-details .orders table thead td,
 .section.profile>.container .profile-details .orders table tr td {
     padding: 10px 20px;
+    border-radius: 3px;
 }
 
 .section.profile>.container .profile-details .orders table tr td {
@@ -1740,10 +1757,12 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     width: 250px;
     gap: 20px;
 }
-.section .profile-details>.actions{
-   display: flex;
-   justify-content: space-between;
+
+.section .profile-details>.actions {
+    display: flex;
+    justify-content: space-between;
 }
+
 .section .profile-details>.actions button {
     background-color: var(--primary-color);
     padding: 10px 20px;
@@ -1761,6 +1780,330 @@ header .nav .nav-container .icons .cart .floating-cart .container .action .total
     background-color: transparent;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+}
+
+.section.cart {
+    margin-top: 170px;
+}
+
+.section.cart .cart-container {
+    display: flex;
+    gap: 40px;
+}
+
+.section.cart .cart-box {
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 2px 3px 5px #e0e0e0;
+}
+
+.section.cart .cart-box img {
+    height: 80px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.section.cart table {
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    border-radius: 0px 0px 12px 12px;
+    display: flex;
+    flex-direction: column;
 
 
+}
+
+.section.cart table tr {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.section.cart table tr:nth-child(1) {
+    margin: 0px;
+}
+
+.section.cart table thead tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.section.cart table tr:nth-child(2n+2) {
+    background-color: var(--light-grey);
+}
+
+.section.cart table thead tr {
+    background: none !important;
+}
+
+.section.cart table thead {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.section.cart table tr button {
+    background-color: #581f18;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 3px 4px;
+    cursor: pointer;
+}
+
+.section.cart table tr td {
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.section.cart h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.section.cart .aside-checkout {
+    width: 100%;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px #e0e0e0;
+    padding: 5px 30px 20px 30px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.section.cart .aside-checkout .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section.cart .aside-checkout .checkout-btn {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 21px;
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section.cart .aside-checkout .checkout-btn:hover {
+    background: none;
+    color: var(--primary-color);
+}
+
+.section.cart .aside-checkout .action {
+    border-top: 1px solid #666;
+}
+
+.section.cart table tr button.dicrease {
+    background-color: #000;
+    color: #fff;
+    -webkit-text-stroke: 1px;
+}
+
+.section.cart table tr button.increase {
+    background-color: var(--secondary-color);
+    color: #fff;
+    -webkit-text-stroke: 1px;
+}
+
+.section.checkout {
+    margin-top: 170px;
+}
+
+.section.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.checkout .checkout-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.section.checkout .checkout-box .addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section.checkout .checkout-box .addresses .add-address {
+    border: 2px dashed var(--primary-color);
+    background: none;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    justify-content: center;
+    padding: 60px 0px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.section.checkout .checkout-box .addresses .add-address {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.section.checkout .checkout-box .addresses .add-address i {
+    font-size: 25px;
+    -webkit-text-stroke: 1px;
+}
+
+.section.checkout .checkout-box .addresses .address-box {
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dashed var(--dark-color);
+    border-radius: 5px;
+    background-color: var(--soft-primary);
+    cursor: pointer;
+}
+
+.section.checkout .checkout-box .addresses .address-box .address table tr td {
+    padding: 5px 10px;
+}
+
+.section.checkout .checkout-box .addresses .address-box .change-address {
+    height: 40px;
+    padding: 0px 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.section.checkout .checkout-box .summary-order {
+    background-color: #ececec;
+    box-shadow: 1px 1px 3px #00000036;
+    padding: 20px 50px;
+    border-radius: 6px;
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+}
+
+.section.checkout .checkout-box .summary-order .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section.checkout .checkout-box .summary-order .row p:nth-child(1) {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.section.checkout .checkout-box .summary-order .row p:nth-child(2) {
+    font-weight: 700
+}
+
+.section.checkout .checkout-box .payment-method {
+    display: flex;
+    gap: 20px;
+}
+
+.section.checkout .checkout-box .payment-method .method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section.checkout .checkout-box .payment-method .method p {
+    margin: 3px;
+}
+
+.section.checkout .checkout-box .payment-method .method img {
+    height: 150px;
+
+    border-radius: 5px;
+}
+
+.section.checkout .checkout-box .payment-method .method input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.section.checkout .checkout-box .payment-method .method input[type=radio]+img {
+    cursor: pointer;
+}
+
+.section.checkout .checkout-box .payment-method .method input[type=radio]:checked+img {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 1px;
+}
+
+.section.checkout .checkout-box .checkout-btn {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    width: 350px;
+}
+
+.section.checkout .checkout-box .checkout-btn:hover {
+    background: none;
+    color: var(--primary-color);
+}
+
+.section.profile.login .social-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.profile.login .social-login p {
+    align-self: center;
+}
+
+.section.profile.login .social-login .methods a {
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.section.profile.login .social-login .methods a:hover img{
+    animation: shake-logo 1.5s both infinite;
+    animation-timing-function: ease-in-out;
+
+}
+.section.profile.login .social-login .methods a:hover{
+    background-color: var(--soft-primary);
+}
+
+
+
+.section.profile.login .social-login .methods a img {
+    width: 50px;
+}
+.section.profile.login .profile-details.active{
+    padding: 50px;
+    box-shadow: 0px 0px 3px #d7d7d7;
+    border-radius: 8px;
+    width: 70%;
 }
